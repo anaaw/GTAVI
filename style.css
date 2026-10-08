@@ -1,0 +1,178 @@
+/*• #FF2B90
+• Roxo Escuro / Violeta (Fundo/Logotipo): #1D0030
+• Roxo Intermediário: #350054
+• Tom Pêssego / Coral (Gradiente do pôr do sol): #E39986
+• Azul Acinzentado / Ciano (Gradiente do céu): #64759D
+• Roxo Acinzentado (Transição): #826092
+*/
+
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+}
+
+
+#bg-video{ /*Vídeo de fundo*/
+    position: fixed;
+    top:0;      
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.overlay{
+    position:fixed;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0,2);
+    z-index:-1;
+}
+
+
+.container{
+    width:100%;
+    height:100vh;
+    padding: 30px 80px;
+}
+
+/*Cabeçalho*/
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.logo img{
+    width:90px;
+}
+
+nav{
+    display: flex;
+    gap:40px;
+}
+
+nav a{
+    color:#350054;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 25px;
+}
+
+nav a:hover{
+    color:#826092 ;
+    transition: 0,5s;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color:  #ffb458; 
+}
+
+.redes i{
+    cursor:pointer;
+}
+
+.redes i:hover{
+    color: #64759D;
+    transition: 0.5s;
+}
+
+/* Área Principal*/
+main{
+    height:85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto{
+    width:45%
+}
+
+.texto h1{
+    font-size: 60px;
+    color: #c9349b   ;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 20px;
+    margin-bottom:30px;
+    color: white;
+    line-height:35px;
+}
+
+.botoes{
+    display:flex;
+    gap:20px;
+
+}
+
+button{
+    padding: 15px 35px;
+    border:none;
+    font-size:16px;
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0,5s;
+    }
+
+    .btn-prevenda{
+        background-color: #f28989 ;
+        color: white;
+    }
+
+    .btn-prevenda:hover{
+        background-color: #ffb458;
+    }
+
+    .btn-trailers{
+        background-color: transparent;
+        color: #ffb458;
+        transition: 0,5s;
+    }
+
+    img{
+        width: 300px;
+    }
+
+    .noticias{
+        height: 100vh;
+        background-color: black;
+        padding:80px;
+    }
+
+    .cards{
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: over;
+    }
+
+    .card{
+        background-color: #c9349b;
+        width:250px;
+        border-radius:15px;
+        overflow:hidden;
+        box-shadow:0 0 15px rgba(0, 0, 0, 0,5);
+    }
+
+    .card:hover{
+        transform:translateY(-10px);
+        transition:0,5s    
+    }
+
+    .card img{
+        width: 100%;
+        height:250px;
+        object-fit:cover;
+    }
