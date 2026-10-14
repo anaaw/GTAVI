@@ -159,7 +159,7 @@ button{
     }
 
     .card{
-        background-color: #c9349b;
+        background-color:#350054;
         width:250px;
         border-radius:15px;
         overflow:hidden;
@@ -173,6 +173,33 @@ button{
 
     .card img{
         width: 100%;
-        height:250px;
+        height:255px;
         object-fit:cover;
     }
+
+    .card h3{
+        padding: 20px 20px 10px;
+        font-size: 22px;
+        color: azure;
+    }
+
+    .card p{
+        padding: 0 20px;
+        color:#ffb458;
+        margin-bottom: 20px;
+    }
+
+    .card a{
+        display: block;
+        text-align: center;
+        background-color:#826092;
+        color:red;
+        text-decoration: none;
+        padding: 15px;
+        font-weight: bold;
+    }
+
+    .card a:hover{
+        background-color: crimson;
+    }
+
